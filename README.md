@@ -1,4 +1,4 @@
-# EmdebSocial_zadaca
+# EmbedSocial_zadaca
 ### Filter for reviews
 
 The reviews can be sorted by (ordered by priority):
