@@ -29,36 +29,36 @@ public class ReviewServiceImpl implements ReviewService {
         if(text.contains("Yes")){
             if(rating.contains("Highest")){
                 if(date.contains("Oldest")){
-                    return this.reviewRepository.findAll(min_rating);
+                    return this.reviewRepository.findAll1(min_rating);
                 }
                 else if(date.contains("Newest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll2(min_rating);
                 }
             }
             else if(rating.contains("Lowest")){
                 if(date.contains("Oldest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll3(min_rating);
                 }
                 else if(date.contains("Newest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll4(min_rating);
                 }
             }
         }
         else if(text.contains("No")){
             if(rating.contains("Highest")){
                 if(date.contains("Oldest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll5(min_rating);
                 }
                 else if(date.contains("Newest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll6(min_rating);
                 }
             }
             else if(rating.contains("Lowest")){
                 if(date.contains("Oldest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll7(min_rating);
                 }
                 else if(date.contains("Newest")){
-                    return Collections.emptyList();
+                    return this.reviewRepository.findAll8(min_rating);
                 }
             }
         }
