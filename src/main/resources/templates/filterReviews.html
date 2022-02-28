@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Filter Reviews</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Filter Reviews</h1>
+        <form>
+            <div class="form-group">
+                <label for="rating">Order by rating:</label>
+                <select class="form-control" id="rating" name="rating">
+                    <option>Highest First</option>
+                    <option>Lowest First</option>
+                </select>
+                <br>
+                <label for="min_rating">Minimum rating:</label>
+                <select class="form-control" id="min_rating" name="min_rating">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <br>
+                <label for="date">Order by date:</label>
+                <select class="form-control" id="date" name="date">
+                    <option>Oldest First</option>
+                    <option>Newest First</option>
+                </select>
+                <br>
+                <label for="text">Prioritize by text:</label>
+                <select class="form-control" id="text" name="text">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <br>
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+    </div>
+
+</body>
+</html>
